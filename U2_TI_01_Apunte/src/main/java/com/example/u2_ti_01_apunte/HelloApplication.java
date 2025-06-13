@@ -6,11 +6,14 @@ import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.effect.ImageInput;
+import javafx.scene.image.Image;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Objects;
 
 public class HelloApplication extends Application {
     @Override
@@ -32,6 +35,8 @@ public class HelloApplication extends Application {
         Scene scene =new Scene(vbox,500,240);
 
         stage.setTitle("Primer proyecto");
+        Image image = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/Test/princess_7734501.png")));
+        stage.getIcons().add(image);
         stage.setScene(scene);
         stage.show();
 
