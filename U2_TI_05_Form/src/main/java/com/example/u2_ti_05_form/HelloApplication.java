@@ -52,9 +52,9 @@ public class HelloApplication extends Application {
         });
 
         btnReset.setOnAction(e->{
-            tfNombre.setText("");
-            tfApellido.setText("");
-            tfEdad.setText("");
+            tfNombre.clear();
+            tfApellido.clear();
+            tfEdad.clear();
             cbRol.setValue(null);
             root.setStyle("");
             lblResultado.setStyle("");
