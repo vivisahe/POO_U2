@@ -1,7 +1,7 @@
 public class App {
     public static void main(String[] args) throws Exception {
 
-        //Declaracion de array
+        //Declaracion de array y asignacion de sus espacios 
         Garage garage1=new Garage(4);
 
         //Instancias
